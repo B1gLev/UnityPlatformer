@@ -52,6 +52,9 @@ public class PlayerController : MonoBehaviour
     private void Flip()
     {
         isFacingRight = !isFacingRight;
-        transform.localScale = new(transform.localScale.x * -1, transform.localScale.y);
+        transform.localScale = new(
+            transform.localScale.x * -1, 
+            transform.localScale.y, 
+            transform.localScale.z);
     }
 }
