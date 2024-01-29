@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
 
-
     private Animator animator;
     private Rigidbody2D rigidbody2;
     private bool isFacingRight;
