@@ -9,6 +9,8 @@ public class ProjectileController : MonoBehaviour
     private void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        rigidbody2D.AddForce(new Vector2(1, 0) * projectileSpeed, ForceMode2D.Impulse);
+        rigidbody2D.AddForce(new Vector2(transform.rotation.z == 0 ? 1 : -1, 0) * projectileSpeed, ForceMode2D.Impulse);
     }
+
+    public void Stop() => rigidbody2D.velocity = new(0, 0);
 }
