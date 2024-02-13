@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 122734173}
   - component: {fileID: 122734172}
   - component: {fileID: 122734175}
+  - component: {fileID: 122734176}
   m_Layer: 6
   m_Name: spikeyRock
   m_TagString: enemy
@@ -346,6 +347,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+--- !u!114 &122734176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122734171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3d84e025e94c14f9c5e28c7a6edf84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageRate: 1
+  damage: 2
+  pushForce: 20
 --- !u!1 &125134405
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,8 +756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee9652f9ddaa404dbb0dfd4bb1a0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodDrops: {fileID: 0}
-  maxHealth: 0
+  bloodDrops: {fileID: 3539231081808773890, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
+  maxHealth: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,63 +1454,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20552abeb7128264bbda9911b478ae46, type: 3}
---- !u!1001 &3510869737819946724
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -184.62808
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.80551
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0016018695
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995445932922075132, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3539231081808773890, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
-      propertyPath: m_Name
-      value: BloodDropsPS
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2b62b5558dc23b040abf0146445ec3da, type: 3}
 --- !u!1001 &6911626212974237857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1570,4 +1529,3 @@ SceneRoots:
   - {fileID: 125134407}
   - {fileID: 223983175}
   - {fileID: 122734174}
-  - {fileID: 3510869737819946724}
