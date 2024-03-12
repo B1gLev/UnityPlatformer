@@ -11,12 +11,16 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Slider healthBar;
     [SerializeField] private Image bloodScreenFX;
     [SerializeField] private float fadeSmooth = 2f;
+    [SerializeField] private AudioClip playerGrunt;
     
+    private AudioSource audioSource;
+
     private bool getDamage;
     private float currentHealth;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = maxHealth;
@@ -38,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         getDamage = true;
         healthBar.value = currentHealth;
+        audioSource.PlayOneShot(playerGrunt, .75f);
         Instantiate(bloodDrops, transform.position, transform.rotation);
         if (currentHealth < 0) MakeDead();
     }
